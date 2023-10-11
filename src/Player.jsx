@@ -22,7 +22,7 @@ const Player = () => {
     const [list, setList] = useState([]);
     useEffect(() => {
         console.log("Spring으로 요청")
-        let url = "http://3.35.209.92:8090/SpringBoot2/PlayerList.do"
+        let url = "http://3.35.209.92:8089/SpringBoot2/PlayerList.do"
         axios
             .post(url,{responseType : 'blob'})
             .then((res) => {
